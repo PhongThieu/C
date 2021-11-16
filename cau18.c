@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 
 int convert(int Decimal){
@@ -23,5 +24,26 @@ int main(){
 
     printf("%d Decimal= %d Binary",num,convert(num));
 
+=======
+#include<stdio.h>
+
+int main(){
+ int num;
+ int Binary=0;
+ int remainder;
+ int temp=1;
+ do{
+     printf("Please enter a number: ");
+     scanf("%d",&num);
+ }while(num<0);
+
+ while(num>0){
+     remainder=num%2;
+     num/=2;
+     Binary+=remainder*temp;
+     temp*=10;
+ }
+ printf("Your Binary code is: %d",Binary);
+>>>>>>> e8ae621b362c08f4478fc7191e7fb4e9e0704507
         return 0;
 }
